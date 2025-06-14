@@ -1,10 +1,19 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom"; // Cambiado de "react-router" a "react-router-dom"
+import May from "./Reservar espacios-Auditorios"; // El nombre del componente debe empezar con mayúscula
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+const root = document.getElementById("root");
+
+ReactDOM.createRoot(root).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      {/* Aquí pongo el header para que se vea en todas las páginas */}
+      <Routes>
+        <Route path="/" element={<May />} /> {/* Usando el componente con mayúscula */}
+      </Routes>
+      {/* Footer para que esté en todas las páginas */}
+    </BrowserRouter>
+  </React.StrictMode>
+);
+
