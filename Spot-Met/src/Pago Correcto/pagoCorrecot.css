@@ -1,24 +1,19 @@
-.container {
+.pago-correcto {
   display: flex;
   overflow: hidden;
   flex-direction: column;
+  margin-bottom: 1.75rem;
   background-color: #f4f4f5;
 }
 
-.header {
+.header-container {
   padding-bottom: 1.5rem;
   width: 100%;
   background-color: #f5f5f5;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 768px) {
-  .header {
-    max-width: 100%;
-  }
-}
-
-.headerContent {
+.header-content {
   display: flex;
   flex-wrap: wrap;
   gap: 1.25rem;
@@ -31,29 +26,19 @@
 }
 
 @media (max-width: 768px) {
-  .headerContent {
+  .header-content {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     max-width: 100%;
   }
 }
 
-.logoSection {
+.logo-container {
   display: flex;
   align-self: flex-start;
 }
 
-.logo1 {
-  object-fit: contain;
-  flex-shrink: 0;
-  align-self: flex-start;
-  margin-right: 0;
-  max-width: 100%;
-  aspect-ratio: 1;
-  width: 142px;
-}
-
-.logo2 {
+.logo-image {
   object-fit: contain;
   flex-shrink: 0;
   max-width: 100%;
@@ -61,14 +46,14 @@
   width: 177px;
 }
 
-.iconSection {
+.header-icons {
   display: flex;
   gap: 0.5rem;
   align-items: flex-start;
   margin: auto 0;
 }
 
-.icon1 {
+.icon-1 {
   object-fit: contain;
   flex-shrink: 0;
   margin-top: 0.875rem;
@@ -76,21 +61,14 @@
   width: 47px;
 }
 
-.icon2 {
+.icon-2 {
   object-fit: contain;
   flex-shrink: 0;
   aspect-ratio: 1;
   width: 61px;
 }
 
-.icon3 {
-  object-fit: contain;
-  flex-shrink: 0;
-  aspect-ratio: 0.87;
-  width: 46px;
-}
-
-.mainContent {
+.main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,13 +85,13 @@
 }
 
 @media (max-width: 768px) {
-  .mainContent {
+  .main-content {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
 }
 
-.contentInner {
+.content-inner {
   display: flex;
   z-index: 10;
   flex-direction: column;
@@ -122,23 +100,23 @@
   width: 434px;
 }
 
-.successBanner {
+.background-shape {
   object-fit: contain;
   margin-left: 0.75rem;
   margin-right: 0.75rem;
   width: 100%;
-  border-radius: 9999px;
+  border-radius: 50%;
   aspect-ratio: 1.63;
 }
 
 @media (max-width: 768px) {
-  .successBanner {
+  .background-shape {
     margin-left: 0.625rem;
     margin-right: 0.625rem;
   }
 }
 
-.successIcon {
+.success-icon {
   object-fit: contain;
   z-index: 10;
   align-self: center;
@@ -148,25 +126,23 @@
   width: 178px;
 }
 
-.successTitle {
+.success-title {
   margin-top: 0.625rem;
   font-size: 3rem;
   font-weight: 700;
-  line-height: 1;
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {
-  .successTitle {
+  .success-title {
     max-width: 100%;
     font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 
-.reservationLink {
+.reservations-link {
   align-self: center;
   font-size: 1.5rem;
-  line-height: 2rem;
   text-align: center;
 }
 
@@ -181,10 +157,9 @@
   margin-top: 1.25rem;
   width: 100%;
   font-size: 1.25rem;
-  line-height: 1.75rem;
   text-align: center;
   color: white;
-  min-height: 209px;
+  min-height: 223px;
 }
 
 @media (max-width: 768px) {
@@ -195,7 +170,7 @@
   }
 }
 
-.footerBackground {
+.footer-background {
   object-fit: cover;
   position: absolute;
   inset: 0;
@@ -203,11 +178,11 @@
   height: 100%;
 }
 
-.footerContent {
+.footer-content {
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 
-.boldText {
-font-weight: 700;
+.social-link {
+  font-weight: 700;
 }
