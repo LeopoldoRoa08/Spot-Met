@@ -11,6 +11,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 2% 0 2%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Estilos adicionales para las imágenes si es necesario */
@@ -18,10 +19,102 @@ body {
     width: 150px;
     height: 150px;
     cursor: pointer;
+    position: relative;
+    right: -100px;
+    top: -10px;
+  
    
 }
 
 .Registro {
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 50;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: -100px;
 }
+
+.linea1, .linea2, .linea3 {
+    height: 8px;
+    width: 40px; /* Un poco más estrechas */
+    background-color: #EE5D08;
+    position: absolute;
+    right: 150px; /* Más cerca del registro (antes era 100px) */
+    transition: all 0.3s ease;
+}
+
+.linea1 {
+    top: 45%;
+}
+
+.linea2 {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.linea3 {
+    top: 55%;
+}
+
+/* Agrupador para las líneas (para el hover y JS) */
+.lineas-container {
+    position: absolute;
+    right: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px; /* Espacio reducido entre líneas */
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Animación al hacer clic */
+.lineas-container.active .linea1 {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.lineas-container.active .linea2 {
+    opacity: 0;
+}
+
+.lineas-container.active .linea3 {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.imagen.con.texto {
+    background-image: url('Espacios.jpg');
+    width: 1110px;
+    height: 418px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    left: 400px;
+    border-radius: 50px;
+}
+
+.texto{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 50px;
+    
+
+}
+
+.encabezado {
+    font-family: 'Roboto', sans-serif;
+    color: #030027;
+    font-size: 20px;
+    position: relative;
+    top: 80px;
+    left: 800px;
+}
+
+
