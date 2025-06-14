@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2% 0 2%;
+}
+
+/* Estilos adicionales para las imágenes si es necesario */
+.logo {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+   
+}
+
+.Registro {
+    cursor: pointer;
+    font-weight: 600;
+}
