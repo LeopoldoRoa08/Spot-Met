@@ -1,0 +1,258 @@
+.spaces-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  width: 100%;
+}
+
+.spaces-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: center;
+  width: 100%;
+  max-width: 1234px;
+}
+
+.spaces-content {
+  width: 100%;
+  max-width: 1134px;
+}
+
+.spaces-content-2 {
+  margin-top: 4rem;
+  width: 100%;
+  max-width: 1117px;
+}
+
+.spaces-content-3 {
+  margin-top: 5rem;
+  width: 100%;
+  max-width: 1117px;
+}
+
+.centro-mundo-container,
+.canchas-container {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.centro-mundo-column,
+.canchas-column {
+  width: 50%;
+}
+
+.centro-mundo-side,
+.canchas-side {
+  margin-left: 1.25rem;
+  width: 50%;
+}
+
+.centro-mundo-card,
+.canchas-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.125rem 0 0.125rem 1.5rem;
+  width: 100%;
+  background-color: #ea580c;
+  border-radius: 1.5rem;
+}
+
+.centro-mundo-title,
+.canchas-title {
+  align-self: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.centro-mundo-content {
+  display: flex;
+  z-index: 10;
+  flex-direction: column;
+  padding: 1.25rem 0 0.5rem 2rem;
+  margin-right: 0;
+  width: 100%;
+  background-color: white;
+  border-radius: 1.5rem;
+}
+
+.canchas-content {
+  display: flex;
+  z-index: 10;
+  flex-direction: column;
+  padding: 1.25rem 0.75rem 0.5rem;
+  margin-top: 1.25rem;
+  margin-right: 0;
+  width: 100%;
+  background-color: white;
+  border-radius: 1.5rem;
+}
+
+.centro-mundo-image,
+.canchas-image {
+  object-fit: contain;
+  align-self: flex-end;
+  width: 100%;
+  border-radius: 1.5rem;
+  background-blend-mode: normal;
+  aspect-ratio: 1.42;
+}
+
+.centro-mundo-description {
+  margin: 1rem 2.5rem 0 0;
+  font-size: 1rem;
+  color: black;
+}
+
+.canchas-description {
+  margin: 0.875rem 2.5rem 0 1.25rem;
+  font-size: 1rem;
+  color: black;
+}
+
+.centro-mundo-footer,
+.canchas-footer {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  font-size: 1.25rem;
+  font-weight: 700;
+  min-height: 62px;
+  color: #0f172a;
+  width: 361px;
+}
+
+.canchas-footer {
+  align-self: center;
+  margin-top: 1.25rem;
+}
+
+.centro-mundo-more-info,
+.canchas-more-info {
+  align-self: stretch;
+  margin: auto 0;
+  width: 182px;
+}
+
+.centro-mundo-arrow,
+.canchas-arrow {
+  object-fit: contain;
+  flex-shrink: 0;
+  align-self: stretch;
+  margin: auto 0;
+  aspect-ratio: 1.43;
+  width: 33px;
+}
+
+.centro-mundo-side-image,
+.canchas-side-image {
+  object-fit: contain;
+  flex-grow: 1;
+  width: 100%;
+  border-radius: 1.5rem;
+  aspect-ratio: 0.87;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 0.375rem;
+  align-self: flex-start;
+  margin-top: 4rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  white-space: nowrap;
+}
+
+.breadcrumb-icon {
+  object-fit: contain;
+  flex-shrink: 0;
+  width: 1.5rem;
+  aspect-ratio: 1;
+}
+
+.breadcrumb-text {
+  margin: auto 0;
+}
+
+@media (max-width: 768px) {
+  .spaces-section {
+    margin-top: 2.5rem;
+    max-width: 100%;
+  }
+
+  .spaces-container {
+    max-width: 100%;
+  }
+
+  .spaces-content {
+    max-width: 100%;
+  }
+
+  .spaces-content-2 {
+    margin-top: 2.5rem;
+    margin-right: 0.625rem;
+    max-width: 100%;
+  }
+
+  .spaces-content-3 {
+    margin-top: 2.5rem;
+    margin-right: 0.625rem;
+    max-width: 100%;
+  }
+
+  .centro-mundo-container,
+  .canchas-container {
+    flex-direction: column;
+  }
+
+  .centro-mundo-column,
+  .canchas-column,
+  .centro-mundo-side,
+  .canchas-side {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .centro-mundo-card,
+  .canchas-card {
+    margin-top: 2.5rem;
+    max-width: 100%;
+  }
+
+  .centro-mundo-content {
+    padding-left: 1.25rem;
+    max-width: 100%;
+  }
+
+  .canchas-content {
+    max-width: 100%;
+  }
+
+  .centro-mundo-image {
+    margin-right: 0;
+  }
+
+  .centro-mundo-description {
+    margin-right: 0.625rem;
+  }
+
+  .canchas-description {
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+  }
+
+  .centro-mundo-side-image,
+  .canchas-side-image {
+    margin-top: 2.5rem;
+    max-width: 100%;
+  }
+
+  .breadcrumb {
+    margin-top: 2.5rem;
+  }
+}
